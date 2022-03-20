@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background"
+        tools:context=".Front">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="@dimen/front_btn_width"
+            android:layout_height="@dimen/front_btn_height"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/front_btn_rate"
+            android:text="@string/front_btn_question"
+            android:inputType="text"
+            android:textSize="@dimen/front_btn_text_size"
+            android:id="@+id/front_btn_questions"
+            android:background="@drawable/front_btn_shape"></androidx.appcompat.widget.AppCompatButton>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="@dimen/front_btn_width"
+            android:layout_height="@dimen/front_btn_height"
+            app:layout_constraintTop_toBottomOf="@+id/front_btn_questions"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:text="@string/front_btn_rate"
+            android:textSize="@dimen/front_btn_text_size"
+            android:inputType="text"
+            android:id="@+id/front_btn_rate"
+            android:background="@drawable/front_btn_shape"
+            app:layout_constraintBottom_toBottomOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
